@@ -4,7 +4,7 @@ import { LINKS } from '../routes'
 
 const Header = () => {
   const md = useMediaQuery('(min-width:768px)')
-  const sm = useMediaQuery('(min-width:480px)')
+  const sm = useMediaQuery('(min-width:600px)')
 
   return (
     <AppBar sx={{ position: 'relative', zIndex: 1, height: md ? 64 : 'auto', bgcolor: '#2F2F2F' }}>
@@ -33,6 +33,9 @@ const Header = () => {
             </Link>
             <Link to={LINKS.contactUs}>
               <Typography sx={{ color: '#fff', textAlign: 'center' }}>Связаться с&nbsp;нами</Typography>
+            </Link>
+            <Link to={LINKS.mediaRequirements}>
+              <Typography sx={{ color: '#fff', textAlign: 'center' }}>Правила для фото&nbsp;и&nbsp;видео</Typography>
             </Link>
           </Box>
         </Box>
